@@ -1,0 +1,13 @@
+void main() {
+Scanner input = new Scanner(System.in);
+
+     int numero;
+     
+
+    System.out.print("Escreva um número inteiro: ");
+numero = input.nextInt();
+
+int dobro = numero *2;
+
+    System.out.printf("O dobro do seu numero é: %d" ,dobro);
+    }
