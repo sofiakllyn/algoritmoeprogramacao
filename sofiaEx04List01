@@ -1,0 +1,13 @@
+void main(){
+        Scanner input = new Scanner(System.in);
+
+        double precoDoProduto;
+        double precoComDesconto;
+
+        System.out.print("digite o preco do produto" );
+        precoDoProduto = input.nextDouble();
+
+        precoComDesconto = precoDoProduto * 0.9;
+        System.out.print(" preco com desconto de 10% = " + precoComDesconto);
+
+    }
