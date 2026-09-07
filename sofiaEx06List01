@@ -1,0 +1,21 @@
+void main() {
+    Scanner input = new Scanner(System.in);
+
+   float salarioAtual;
+   float reajuste;
+   float salarioAlterado;
+   float salarioTotal;
+
+    System.out.print("Salário atual: ");
+    salarioAtual = input.nextFloat();
+    System.out.print(" Voce recebeu um aumento de %");
+    reajuste = input.nextFloat();
+
+    salarioAlterado = salarioAtual * (reajuste/100);
+
+    salarioTotal = salarioAtual + salarioAlterado;
+
+    System.out.print("Valor do aumento: " + salarioAlterado);
+  System.out.print("Salario total: " + salarioTotal);
+   
+    }
