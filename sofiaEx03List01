@@ -1,0 +1,19 @@
+void main() {
+
+        Scanner inoput = new Scanner(System.in);
+
+        int idade;
+        int mes;
+
+        System.out.print("qual sua idade? ");
+        idade = inoput.nextInt();
+
+
+        int totalMes = (idade * 12);
+
+
+        System.out.print("a sua idade em meses é: ");
+
+
+        System.out.printf(" sua idade em meses é: %d", totalMes);
+    }
