@@ -1,0 +1,27 @@
+void main() {
+    Scanner input = new Scanner(System.in);
+
+    double celsius, resultado;
+    int opcao;
+
+    System.out.print("Digite a temperatura em graus Celsius: ");
+    celsius = input.nextDouble();
+
+System.out.println("Escolha a conversão: ");
+    System.out.println(" 1 - Fahrenheit");
+    System.out.println(" 2 - Kelvin");
+    System.out.print("Opção: ");
+    opcao = input.nextInt();
+
+    if (opcao == 1){
+        resultado = celsius * 1.8 + 32;
+        System.out.println("Temperatura em Fahrenheit: " + resultado + "ºF");
+    } else if (opcao == 2){
+        resultado = celsius + 273.15;
+        System.out.println("Temperatura em Kelvin: " + resultado + "K");
+    } else {
+        System.out.println("Opcao invalida!");
+
+    }
+}
+
