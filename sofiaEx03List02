@@ -1,0 +1,18 @@
+void main() {
+Scanner input = new Scanner(System.in);
+
+    int numero;
+
+    System.out.print("Digite um número: ");
+    numero = input.nextInt();
+
+    if (numero %2 == 0){
+        System.out.print("O número é par! ");
+        System.out.println("O quadrado do número é: " + (numero * numero));
+
+    } else {
+        System.out.print("O número é ímpar! ");
+        System.out.println("O cubo do número é: " + (numero * numero * numero));
+    }
+}
+
