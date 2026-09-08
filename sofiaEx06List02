@@ -1,0 +1,44 @@
+void main() {
+Scanner input = new Scanner(System.in);
+
+int codigo, quantidade;
+double precoUnitario = 0;
+double precoTotal, desconto, precoFinal;
+
+    System.out.print("Digite o codigo do produto: ");
+    codigo = input.nextInt();
+
+    System.out.print("Digite a quantidade comprada: ");
+    quantidade = input.nextInt();
+
+    // Tabela I
+if (codigo >= 1 && codigo <= 10) {
+    precoUnitario = 10.0;
+}else if ( codigo >= 11 && codigo <= 20){
+precoUnitario = 15.0;
+} else if (codigo >= 21 && codigo <= 30){
+    precoUnitario = 20.0;
+} else if (codigo >= 31 && codigo <=40){
+    precoUnitario = 30.0;
+} else {
+    System.out.println("Codigo inválido.");
+    return;
+}
+precoTotal = precoUnitario * quantidade;
+
+// Tabela II
+    if (precoTotal <= 250){
+        desconto = precoTotal * 0.05;
+    } else if (precoTotal <= 500){
+        desconto = precoTotal * 0.10;
+    } else {
+        desconto = precoTotal * 0.15;
+    }
+
+    precoFinal = precoTotal - desconto;
+
+    System.out.println("Preço unitário: R$ " + precoUnitario);
+    System.out.println("Preço total: R$ " + precoTotal);
+    System.out.println("Desconto: R$ " + desconto);
+    System.out.println("Preço final: R$ " + precoFinal);
+}
