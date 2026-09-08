@@ -1,0 +1,18 @@
+void main() {
+    Scanner input = new Scanner(System.in);
+
+    double consumo;
+    double valorConta;
+
+    System.out.print("Qual foi seu gasto energético esse mês (em kWh)?: ");
+    consumo = input.nextDouble();
+
+    if (consumo <= 100) {
+        valorConta = consumo * 0.50;
+    } else if (consumo <= 200){
+    valorConta = consumo * 0.70;
+    } else {
+        valorConta = consumo * 0.90;
+    }
+    System.out.printf(" Valor da conta de energia: R$ %.2f%n", valorConta);
+}
