@@ -1,0 +1,50 @@
+void main() {
+    Scanner input = new Scanner(System.in);
+
+    int mes;
+
+    System.out.println("Conversor de numero em mes");
+    System.out.print("Informe o mes do ano");
+    mes = input.nextInt();
+
+    switch (mes) {
+        case 1:
+            IO.print("Janeiro");
+            break;
+        case 2:
+            IO.print("Fevereiro");
+            break;
+        case 3:
+            IO.print("Março");
+            break;
+        case 4:
+            IO.print("Abril");
+            break;
+        case 5:
+            IO.print("Maio");
+            break;
+        case 6:
+            IO.print("Junho");
+            break;
+        case 7:
+            IO.print("Julho");
+            break;
+        case 8:
+            IO.print("Agosto");
+            break;
+        case 9:
+            IO.print("Setembro");
+            break;
+        case 10:
+            IO.print("Outubro");
+            break;
+        case 11:
+            IO.print("Novembro");
+            break;
+        case 12:
+            IO.print("Dezembro");
+            break;
+        default:
+            IO.print("Numero invalido");
+    }
+}
