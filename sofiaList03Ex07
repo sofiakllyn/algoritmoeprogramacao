@@ -1,0 +1,27 @@
+oid main() {
+    Scanner input = new Scanner(System.in);
+
+double notas = 0;
+double notaDigitada = 1;
+
+    System.out.print(".:Calculadora de medidas:.");
+    System.out.print("MENU\n Digite as notas dos alunos no campo abaixo\n digite 0 para calcular as media das notas");
+    int c = -1;
+
+    while (notaDigitada != 0) {
+        if (notaDigitada < 0) {
+            System.out.print("Digite uma nota válida");
+            notas = 0;
+        } else {
+            System.out.print("\nDigite a nota do aluno: ");
+            notaDigitada = input.nextDouble();
+            notas += notaDigitada;
+            c++;
+        }
+    }
+double media = notas/c;
+    System.out.printf("\nForam digitadas %d notas\nA media do aluno é %.2f", c, media);
+
+
+
+}
