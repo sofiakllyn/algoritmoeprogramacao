@@ -1,0 +1,21 @@
+void main() {
+    Scanner input = new Scanner(System.in);
+
+    int senha, senhaDigitada;
+    int tentativas = 1;
+    String senhaAlterada;
+
+    System.out.println("CADASTRO DE SENHAS");
+    System.out.print("Digite uma senha de 4 digitos: ");
+    senha = input.nextInt();
+    System.out.print("Confirme sua senha: ");
+    senhaDigitada = input.nextInt();
+
+    while (senha != senhaDigitada){
+        System.out.println("Senha incorreta. Tente novamente.");
+    System.out.print("\n Digite sua senha: ");
+    senhaDigitada = input.nextInt();
+    tentativas++;
+    }
+
+    System.out.print("Acesso Autorizado! \nFoi feito   " + tentativas + "tentativas");
